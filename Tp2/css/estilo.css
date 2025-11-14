@@ -1,1 +1,13 @@
+:root {
+  --bs-rosa: #ff69b4;
+  --bs-naranja: #ff7f00;
+}
+
+.text-rosa {
+  color: var(--bs-rosa) !important;
+}
+
+.text-naranja {
+  color: var(--bs-naranja) !important;
+}
 
