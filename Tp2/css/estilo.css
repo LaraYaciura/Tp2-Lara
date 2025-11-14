@@ -1,13 +1,11 @@
-:root {
-  --bs-rosa: #ff69b4;
-  --bs-naranja: #ff7f00;
-}
-
 .text-rosa {
-  color: var(--bs-rosa) !important;
+  color: #ff69b4; /* rosa fuerte */
 }
 
 .text-naranja {
-  color: var(--bs-naranja) !important;
+  color: #ff7f00; /* naranja */
 }
 
+.text-violeta {
+  color: #8a2be2; /* violeta */
+}
