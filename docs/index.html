@@ -9,23 +9,50 @@
 <body class="bg-dark text-light">
 
 <!-- Menú horizontal -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-black shadow">
-  <div class="container">
-    <a class="navbar-brand text-danger fw-bold" href="index.html">Radiohead</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse justify-content-center" id="menuPrincipal">
-      <ul class="navbar-nav">
-        <li class="nav-item"><a class="nav-link text-white fw-semibold" href="index.html">Inicio</a></li>
-        <li class="nav-item"><a class="nav-link text-white fw-semibold" href="albums.html">Discografía</a></li>
-        <li class="nav-item"><a class="nav-link text-white fw-semibold" href="conciertos.html">Conciertos</a></li>     
-        <li class="nav-item"><a class="nav-link text-white fw-semibold" href="integrantes.html">Miembros</a></li>
+<!-- Menú horizontal centrado con submenús -->
+  <nav class="bg-black py-2">
+    <div class="container">
+      <ul class="nav justify-content-center">
+        <!-- Index -->
+        <li class="nav-item">
+          <a href="index.html" class="nav-link text-white fw-semibold">Inicio</a>
+        </li>
 
+        <!-- Discografía con submenú -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-white fw-semibold" href="albums.html" id="discografiaDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Discografía
+          </a>
+          <ul class="dropdown-menu bg-dark border border-secondary" aria-labelledby="discografiaDropdown">
+            <li><a class="dropdown-item text-danger fw-bold" href="albums.html">Discografía principal</a></li>
+            <li><a class="dropdown-item text-white" href="conciertos.html">Conciertos</a></li>
+          </ul>
+        </li>
+
+        <!-- Integrantes con submenú -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-white fw-semibold" href="integrantes.html" id="integrantesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Integrantes
+          </a>
+          <ul class="dropdown-menu bg-dark border border-secondary" aria-labelledby="integrantesDropdown">
+            <li><a class="dropdown-item text-danger fw-bold" href="integrantes.html">La banda</a></li>
+            <li><a class="dropdown-item text-white" href="premios.html">Premios</a></li>
+          </ul>
+        </li>
+
+        <!-- Videos con submenú -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-white fw-semibold" href="videos.html" id="videosDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Videos
+          </a>
+          <ul class="dropdown-menu bg-dark border border-secondary" aria-labelledby="videosDropdown">
+            <li><a class="dropdown-item text-danger fw-bold" href="videos.html">Videos principales</a></li>
+            <li><a class="dropdown-item text-white" href="arte.html">Arte</a></li>
+          </ul>
+        </li>
       </ul>
     </div>
-  </div>
-</nav>
+  </nav>
 
 <!-- Contenedor principal -->
 <div class="container border border-secondary rounded p-4 mt-5 bg-black shadow-lg">

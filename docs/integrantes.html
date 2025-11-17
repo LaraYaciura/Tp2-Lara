@@ -9,16 +9,52 @@
   <header class="text-center mb-4"> 
   <h1 class="text-danger">Miembros de Radiohead</h1> 
     </header> <!-- Menú horizontal --> 
-    <nav class="mb-5"> 
-      <ul class="nav justify-content-center flex-wrap"> 
-      <li class="nav-item"><a class="nav-link text-light" href="videos.html">Videos</a>
-      </li> 
-      <li class="nav-item">
-      <a class="nav-link text-light" href="conciertos.html">Conciertos</a>
-    </li> 
-  </ul> 
-</nav> <!-- Fila 1: 3 columnas --> 
-<div class="row mb-4"> <!-- Thom Yorke --> <div class="col-md-4"> 
+<!-- Menú horizontal centrado con submenús -->
+  <nav class="bg-black py-2">
+    <div class="container">
+      <ul class="nav justify-content-center">
+        <!-- Index -->
+        <li class="nav-item">
+          <a href="index.html" class="nav-link text-white fw-semibold">Inicio</a>
+        </li>
+
+        <!-- Discografía con submenú -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-white fw-semibold" href="albums.html" id="discografiaDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Discografía
+          </a>
+          <ul class="dropdown-menu bg-dark border border-secondary" aria-labelledby="discografiaDropdown">
+            <li><a class="dropdown-item text-danger fw-bold" href="albums.html">Discografía principal</a></li>
+            <li><a class="dropdown-item text-white" href="conciertos.html">Conciertos</a></li>
+          </ul>
+        </li>
+
+        <!-- Integrantes con submenú -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-white fw-semibold" href="integrantes.html" id="integrantesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Integrantes
+          </a>
+          <ul class="dropdown-menu bg-dark border border-secondary" aria-labelledby="integrantesDropdown">
+            <li><a class="dropdown-item text-danger fw-bold" href="integrantes.html">La banda</a></li>
+            <li><a class="dropdown-item text-white" href="premios.html">Premios</a></li>
+          </ul>
+        </li>
+
+        <!-- Videos con submenú -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-white fw-semibold" href="videos.html" id="videosDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Videos
+          </a>
+          <ul class="dropdown-menu bg-dark border border-secondary" aria-labelledby="videosDropdown">
+            <li><a class="dropdown-item text-danger fw-bold" href="videos.html">Videos principales</a></li>
+            <li><a class="dropdown-item text-white" href="arte.html">Arte</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </nav>
+<div class="row mb-4"> <!-- Thom Yorke --> 
+<div class="col-md-4"> 
   <div class="p-3 bg-secondary rounded text-center h-100"> 
     <img src="imagenes/thom.webp" alt="Thom Yorke" class="img-fluid border border-light mb-3"> 
     <h5 class="text-danger">Thom Yorke</h5> 
