@@ -16,16 +16,49 @@
       No solo sus miembros protagonizan estas producciones, sino que cada video suele presentar una puesta en escena y un concepto propio. 
       Además, la banda ha explorado distintas técnicas de animación colaborando con otros artistas, destacando siempre por su originalidad y creatividad. </p>
     </div>
-    <nav class="bg-secondary py-2">
-      <div class="container">
-        <ul class="nav justify-content-center">
-          <li class="nav-item"><a href="index.html" class="nav-link text-white">Inicio</a></li>
-          <li class="nav-item"><a href="conciertos.html" class="nav-link text-white">Conciertos</a></li>
-          <li class="nav-item"><a href="arte.html" class="nav-link text-white">Arte</a></li>
-        </ul>
-      </div>
-    </nav>
-  </header>
+  <nav class="bg-dark py-4">
+    <div class="container">
+      <ul class="nav justify-content-center">
+        <!-- Index -->
+        <li class="nav-item">
+          <a href="index.html" class="nav-link text-white fw-semibold">Inicio</a>
+        </li>
+
+        <!-- Discografía con submenú -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-white fw-semibold" href="discografia.html" id="discografiaDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Discografía
+          </a>
+          <ul class="dropdown-menu bg-dark border border-secondary" aria-labelledby="discografiaDropdown">
+            <li><a class="dropdown-item text-danger fw-bold" href="discografia.html">Discografía principal</a></li>
+            <li><a class="dropdown-item text-white" href="conciertos.html">Conciertos</a></li>
+          </ul>
+        </li>
+
+        <!-- Integrantes con submenú -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-white fw-semibold" href="integrantes.html" id="integrantesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Integrantes
+          </a>
+          <ul class="dropdown-menu bg-dark border border-secondary" aria-labelledby="integrantesDropdown">
+            <li><a class="dropdown-item text-danger fw-bold" href="integrantes.html">La banda</a></li>
+            <li><a class="dropdown-item text-white" href="premios.html">Premios</a></li>
+          </ul>
+        </li>
+
+        <!-- Videos con submenú -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-white fw-semibold" href="videos.html" id="videosDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Videos
+          </a>
+          <ul class="dropdown-menu bg-dark border border-secondary" aria-labelledby="videosDropdown">
+            <li><a class="dropdown-item text-danger fw-bold" href="videos.html">Videos principales</a></li>
+            <li><a class="dropdown-item text-white" href="arte.html">Arte</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </nav>   
 
   <!-- CONTENIDO PRINCIPAL -->
   <main class="container mb-5">
